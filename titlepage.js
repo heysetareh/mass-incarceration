@@ -4,6 +4,7 @@ let title1;
 let words;
 let xpos;
 let ypos;
+let button;
 
 //classes
 //title text class
@@ -26,7 +27,9 @@ class title{
   }
 }
 
-
+function startJourney() {
+  	window.location.assign("https://heysetareh.github.io/mass-incarceration/index2.html");
+}
 
 
 
@@ -34,7 +37,8 @@ class title{
 function preload() {
  handcuffs=loadImage("handcuffs.png");
   
-prisonwallfont = loadFont('fonts/Mohave-Bold.otf');
+prisonwallfont = loadFont('fonts/pixelade.ttf');
+jailtattoos = loadFont('fonts/Woodcutter Prison Tattoo.ttf');
 
 }
 
@@ -54,12 +58,16 @@ createCanvas(windowWidth, windowHeight);
 
 function draw() {
   background(51);
+ 
   
   //show title
   title1.show();
-  title1.popUp("Mass Incarceration: The Game",windowWidth/2,windowHeight/2);
+  title1.popUp("MASS INCARCERATION: THE GAME",windowWidth/2,windowHeight/2);
   
-  title1.popUp("\n \n click to begin",windowWidth/2,windowHeight/2+30) 
+  title1.popUp("\n \n CLICK TO BEGIN",windowWidth/2,windowHeight/2+30);
+  button = createButton("Click to begin");
+  button.position(230,400);
+  button.mousePressed(startJourney);
 
   // Run all the boids
   for (var i = 0; i < boids.length; i++) {
