@@ -28,7 +28,7 @@ function preload() {
 }
 
 function setup() { 
-  createCanvas(1000, 1000);
+  createCanvas(windowWidth, windowHeight);
   button = createButton("Eddy");
   button.position(139,535);
   button.mousePressed(eddyButton);
