@@ -38,7 +38,6 @@ function preload() {
  handcuffs=loadImage("handcuffs.png");
   
 prisonwallfont = loadFont('fonts/pixelade.ttf');
-jailtattoos = loadFont('fonts/Woodcutter Prison Tattoo.ttf');
 
 }
 
