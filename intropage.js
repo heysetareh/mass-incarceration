@@ -5,10 +5,10 @@ var button;
 var scripts;
 
 var lines = [
-  ["The U.S. currently holds over 2.3 million prisoners. With 724 people locked up out of 100,000, it has the highest incarceration rate in the world."],
-  ["In the 1990s, violent and property crimes began to drop. But the US's incarceration rate continued to climb."],
-  ["1 in 5 are locked up for drug offenses. About half of federal prisoners are incarcerated for nonviolent drug crimes."],
-  ["According to Brennan Center For Justice, 39 percent of Americans are unnecessarily incarcerated. This means that there is no public safety rationale to keep them behind bars."],
+  ["The U.S. currently holds over 2.3 million prisoners. \n With 724 people locked up out of 100,000, it has the highest incarceration rate in the world."],
+  ["In the 1990s, violent and property crimes began to drop. \n But the US's incarceration rate continued to climb."],
+  ["1 in 5 are locked up for drug offenses. \n About half of federal prisoners are incarcerated for nonviolent drug crimes."],
+  ["According to Brennan Center For Justice, 39 percent of Americans are unnecessarily incarcerated. \n This means that there is no public safety rationale to keep them behind bars."],
 	["Who are these 2.3 million people? How did they find themselves behind bars?"]  
   ];
 
