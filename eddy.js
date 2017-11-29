@@ -8,7 +8,7 @@ function preload() {
 }
 
 function setup() { 
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, 3000);
 
   
 } 
@@ -27,6 +27,11 @@ function draw() {
   fill(255);
   text("\n Eddy is a 65-year-old professional musician.\n Over 30 years ago, he served two years probation on a felony \n conviction for trying to sell marijuana. Although Eddy is a legal \n immigrant with a green card, this history puts him at a higher \n risk of deportation.",(50)+40,(50)+40);
   
+  
+  
+image(box,50,350,750,400);
+  text("What would give Eddy a chance at a clean slate? \n A: Proposition 4 \n B: Amendment 2 \n C: The California Immigration Act \n Answer: A \n California’s Proposition 4 is a ballot initiative that legalized recreational use of marijuana in November 2016. \n This gives people with pot-related convictions like Eddy a chance to reduce or wipe away previous offenses. \n" ,(50)+40,(430)+40);
+
 }
 
 function blinking () {
