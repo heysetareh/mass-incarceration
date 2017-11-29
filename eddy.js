@@ -1,5 +1,6 @@
 var box;
 var font;
+var blinkOn = true;
 
 function preload() {
   box = loadImage("box.png");
@@ -8,28 +9,30 @@ function preload() {
 
 function setup() { 
   createCanvas(windowWidth, windowHeight);
+
   
 } 
 
 function draw() { 
   background(0);
   
+ 
+  
   textFont(font);
   textSize(30);
   fill(255,255,255);
   noStroke();
-  image(box,windowWidth/2,windowHeight/2,900,220);
-  blinking(rect((windowWidth/2)+19,(windowHeight/2)+73,22,3.5));
+  image(box,50,30,750,300);
+  blinking(rect((50)+19,(50)+73,22,3.5));
   fill(255);
-  text("\n Eddy is a 65-year-old professional musician. Over 30 years ago, he served two \n years probation on a felony conviction for trying to \n sell marijuana. Although Eddy is a legal immigrant with a green card, this history \n puts him at a higher risk of deportation.",(windowWidth/2)+40,(windowHeight/2)+40);
+  text("\n Eddy is a 65-year-old professional musician.\n Over 30 years ago, he served two years probation on a felony \n conviction for trying to sell marijuana. Although Eddy is a legal \n immigrant with a green card, this history puts him at a higher \n risk of deportation.",(50)+40,(50)+40);
   
 }
 
 function blinking () {
-  	blink = true;
-  	if (blink === true) {
+  	
+  	if (blinkOn) {
       fill(255,0,30);
- 		 rect((windowWidth/2)+19,(windowHeight/2)+73,22,3.5);
       blink = false;
     }
 
