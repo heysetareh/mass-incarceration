@@ -1,9 +1,9 @@
 
-var box;
+var dialogueBox;
 var font;
 
 function preload() {
-  box = loadImage("box.png");
+  dialogueBox = loadImage("box.png");
   font = loadFont("pixelade.ttf");
 }
 
