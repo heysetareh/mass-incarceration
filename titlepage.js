@@ -28,7 +28,7 @@ class title{
 }
 
 function startJourney() {
-  	window.location.assign("https://heysetareh.github.io/mass-incarceration/characterpage.html");
+  	window.location.assign("https://heysetareh.github.io/mass-incarceration/intropage.html");
 }
 
 
