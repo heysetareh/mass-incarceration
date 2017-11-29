@@ -10,12 +10,12 @@ var images = [
   ];
 
 function eddyButton() {
-  	window.location.assign("https://heysetareh.github.io/mass-incarceration/");
+  	window.location.assign("https://heysetareh.github.io/mass-incarceration/eddy.html/");
 
 }
 
 function julesButton() {
-  	window.location.assign("https://heysetareh.github.io/mass-incarceration/");
+  	window.location.assign("https://heysetareh.github.io/mass-incarceration/jules.html/");
 }
 
 function preload() {
