@@ -65,7 +65,7 @@ function draw() {
   
   title1.popUp("\n \n CLICK TO BEGIN",windowWidth/2,windowHeight/2+30);
   button = createButton("Click to begin");
-  button.position(230,400);
+  button.position(windowWidth/2,windowHeight/2+110);
   button.mousePressed(startJourney);
 
   // Run all the boids
