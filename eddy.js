@@ -32,7 +32,15 @@ function draw() {
 image(box,50,350,750,400);
   text("What would give Eddy a chance at a clean slate? \n A: Proposition 4 \n B: Amendment 2 \n C: The California Immigration Act \n Answer: A \n California’s Proposition 4 is a ballot initiative that legalized recreational use of marijuana in November 2016. \n This gives people with pot-related convictions like Eddy a chance to reduce or wipe away previous offenses. \n" ,(50)+40,(430)+40);
 
+  
+  image(box,50,780,750,330);
+  text("Marijuana convictions can bring which life-altering consequences? \n A. finding/keeping a job \n B. Obtaining a student loan \n C. Getting a professional license \n D. All of the above \n Answer: D: All of the above",(50)+40,(840)+40);
+  
+  
+  
+  
 }
+
 
 function blinking () {
   	
