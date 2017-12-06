@@ -29,7 +29,7 @@ url("pixelade.svg#filename") format("svg");
 .question {
   font-family: "pixelade";
   font-size: 25px;
-  height: 45px;
+  height: 100%;
   width: 90%;
   color: white;
   background: linear-gradient(0deg, #c6c8ff, #aec9ff);
@@ -50,7 +50,7 @@ body {
   font-family: "pixelade";
   font-size: 25px;
   border-width: 5px;
-  height: 120px;
+  height: 100%;
     width: 90%;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -65,6 +65,7 @@ body {
   font-size: 25px;
   background: white;
   border-color: white;
+  border-radius: 7px;
 }
 
 .space {
@@ -80,3 +81,16 @@ body {
   padding: 16px;
   max-width: 900px;
 }
+
+#header {
+ 	   height: 80px;
+		font-family: pixelade; 
+ 	 	font-size: 45px;
+  padding-top: 12px;
+}
+
+
+#footer {
+  
+}
+
