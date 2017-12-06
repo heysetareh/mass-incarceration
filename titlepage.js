@@ -1,53 +1,16 @@
 var boids = [];
 var handcuffs;
-let title1;
-let words;
-let xpos;
-let ypos;
-let button;
-
-//classes
-//title text class
-class title{
-  constructor() {}
- 
-  show() {
-  fill(137, 137, 158);
-  strokeWeight(30);
-  rect(CENTER,CENTER);
-  textSize(40);
-  textFont(prisonwallfont);
-	fill(255,255,255);
- textAlign(CENTER,CENTER);
-  
-  }
-  
-  popUp(words,xpos,ypos) {
-		  text(words,xpos,ypos);
-  }
-}
-
-function startJourney() {
-  	window.location.assign("https://heysetareh.github.io/mass-incarceration/intropage.html");
-}
-
-
-
+var pixelade;
 
 function preload() {
  handcuffs=loadImage("handcuffs.png");
-  
-prisonwallfont = loadFont('fonts/pixelade.ttf');
-
+	pixelade=loadFont("pixelade.ttf");
 }
 
 
 function setup() {
-//  createCanvas(720, 400);
-createCanvas(windowWidth, windowHeight);
-
-  title1 = new title();
-
+  createCanvas(windowWidth, windowHeight);
+ 
 
   // Add an initial set of boids into the system
   for (var i = 0; i < 100; i++) {
@@ -56,17 +19,14 @@ createCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
-  background(51);
- 
-  
-  //show title
-  title1.show();
-  title1.popUp("MASS INCARCERATION: THE GAME",windowWidth/2,windowHeight/2);
-  
-  title1.popUp("\n \n CLICK TO BEGIN",windowWidth/2,windowHeight/2+30);
-  button = createButton("Click to begin");
-  button.position(windowWidth/2,(windowHeight/2)+110);
-  button.mousePressed(startJourney);
+  background(0);
+   fill(255);
+  textSize(30);
+  textFont(pixelade);
+   textAlign(CENTER,CENTER);
+  buttonss("click to start",50);
+
+  text("MASS INCARCERATION: A JOURNEY", windowWidth/2,windowHeight/2);
 
   // Run all the boids
   for (var i = 0; i < boids.length; i++) {
@@ -106,7 +66,7 @@ Boid.prototype.flock = function(boids) {
   // Arbitrarily weight these forces
   sep.mult(2.5);
   ali.mult(1.0);
-  coh.mult(2.0);
+  coh.mult(1.0);
   // Add the force vectors to acceleration
   this.applyForce(sep);
   this.applyForce(ali);
@@ -142,7 +102,6 @@ Boid.prototype.render = function() {
  // fill(127, 127);
  // stroke(200);
   noStroke();
-
   image(handcuffs,this.position.x,this.position.y,50,50);
 
 }
@@ -235,3 +194,29 @@ Boid.prototype.cohesion = function(boids) {
     return createVector(0, 0);
   }
 }
+
+
+
+//button
+function buttonss(name, xpos) {
+    var button = createButton(name);
+    button.style("border-color", "#c6c8ff");
+    button.style("border-color", "#c6c8ff");
+    button.style("background-color", "transparent");
+    button.position(150,300);
+    button.style("font-weight", "regular");
+    button.style("font-size", "40px");
+    button.style("font-color", "#c6c8ff");
+    button.style("font-family", "pixelade");
+    button.style("color", "white");
+  	button.style("border-radius", "7px");
+
+    button.mousePressed(goToLink);
+
+  }
+
+
+   	function goToLink() {window.location = "https://heysetareh.github.io/mass-incarceration/intropage.html";}
+
+
+
