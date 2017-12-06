@@ -22,28 +22,7 @@ var link;
     
   ];
 
-var nav = [
 
-  {
-    name: "eddy",
-    link: "https://heysetareh.github.io/mass-incarceration/eddy.html"
-  },
-  {
-    name: "jules",
-    link: "https://heysetareh.github.io/mass-incarceration/jules.html"
-  },
-
-  {
-    name: "intro",
-    link: "https://heysetareh.github.io/mass-incarceration/intropage.html"
-  },
-
-  {
-    name: "start over",
-    link: "https://heysetareh.github.io/mass-incarceration/"
-  },
-
-];
 
 
 function preload() {
@@ -68,12 +47,12 @@ function setup() {
     {
       question: "What would give Eddy a chance at a clean slate?",
       answers: {
-        a: 'Proposition 4',
+        a: 'Proposition 64',
         b: 'Amendment 2',
         c: 'The California Immigration Act'
       },
       correctAnswer: 'a',
-      correctAnswerText: "California’s Proposition 4 is a ballot initiative that legalized recreational use of marijuana in November 2016. This gives people with pot-related convictions like Eddy a chance to reduce or wipe away previous offenses."
+      correctAnswerText: "Correct Answer: Proposition 64. California’s Proposition 64 is a ballot initiative that legalized recreational use of marijuana in November 2016. This gives people with pot-related convictions like Eddy a chance to reduce or wipe away previous offenses."
     },
     {
       question: "Marijuana convictions can bring which life-altering consequences?",
@@ -84,7 +63,7 @@ function setup() {
         d: "All of the above"
       },
       correctAnswer: 'd',
-      correctAnswerText: "For thousands of Americans, marijuana convictions still bring life-altering consequences, making it difficult to, among other things, find and keep a job, get a professional license or obtain a student loan."
+      correctAnswerText: "\n  Correct Answer: All of the above. For thousands of Americans, marijuana convictions still bring life-altering consequences, making it difficult to, among other things, find and keep a job, get a professional license or obtain a student loan."
     }
   ];
 
