@@ -30,11 +30,46 @@ function preload() {
 function setup() { 
   createCanvas(windowWidth, windowHeight);
   button = createButton("Eddy");
-  button.position(139,535);
-  button.mousePressed(eddyButton);
+   button.position(139,535);
+    button.mousePressed(eddyButton);
+    button.style("border-color", "#c6c8ff");
+    button.style("border-color", "#c6c8ff");
+    button.style("background-color", "transparent");
+    button.position(150,300);
+    button.style("font-weight", "regular");
+    button.style("font-size", "40px");
+    button.style("font-color", "#c6c8ff");
+    button.style("font-family", "pixelade");
+    button.style("color", "white");
+  	button.style("border-radius", "7px");
+
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
   button2 = createButton("Data");
   button2.position(700,535);
   button2.mousePressed(julesButton);
+ button2.position(139,535);
+    button2.style("border-color", "#c6c8ff");
+    button2.style("border-color", "#c6c8ff");
+    button2.style("background-color", "transparent");
+    button2.style("font-weight", "regular");
+    button2.style("font-size", "40px");
+    button2.style("font-color", "#c6c8ff");
+    button2.style("font-family", "pixelade");
+    button2.style("color", "white");
+  	button2.style("border-radius", "7px");
+
+
+
+
  // button.mousePressed(goToLink);
 } 
 
