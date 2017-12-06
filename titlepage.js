@@ -216,7 +216,7 @@ function buttonss(name, xpos) {
   }
 
 
-   	function goToLink() {window.location = "https://heysetareh.github.io/mass-incarceration/intropage.html";}
+   	function goToLink() {window.location = "https://heysetareh.github.io/mass-incarceration/characterpage.html";}
 
 
 
