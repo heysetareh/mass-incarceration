@@ -184,9 +184,8 @@ function draw() {
 
 
   buttonss("eddy", 40, links[0]);
-  buttonss("jules", 140, links[1]);
-  buttonss("intro", 240, links[2]);
-  buttonss("start over", 340, links[3]);
+  buttonss("data", 140, links[2]);
+  buttonss("start over", 240, links[3]);
 
 
 
