@@ -9,15 +9,16 @@ var name;
 var link;
 
 
+
   var links = [
 
    	function goToLinkEddy() {window.location = "https://heysetareh.github.io/mass-incarceration/eddy.html";},
    
-    function goToLinkJules() {window.location = "https://heysetareh.github.io/mass-incarceration/eddy.html"},
+    function goToLinkJules() {window.location = "https://heysetareh.github.io/mass-incarceration/jules.html"},
    
-   function goToLinkIntro() {window.location = "https://heysetareh.github.io/mass-incarceration/eddy.html"},
+   function goToLinkIntro() {window.location = "https://heysetareh.github.io/mass-incarceration/intropage.html"},
 
-  	function goToLinkStartOver() {window.location = "https://heysetareh.github.io/mass-incarceration/eddy.html"}
+  	function goToLinkStartOver() {window.location = "https://heysetareh.github.io/mass-incarceration/"}
     
   ];
 
@@ -47,14 +48,13 @@ var nav = [
 
 function preload() {
   pixelade = loadFont("pixelade.ttf");
+  eddyimg = loadImage("eddy.png");
 
 }
 
 function setup() {
-  canvas = createCanvas(1000, 273);
-  canvas.position(0, windowHeight + 455);
-
-
+  canvas = createCanvas(1000, 160);
+	canvas.parent("footer");
 
 
 
@@ -157,15 +157,19 @@ function setup() {
 
           // color the answers green
           answerContainers[i].style.color = 'lightgreen';
-          let correctAnswer = questions[1].correctAnswerText
+          
+          //push the correct answer.  
+          let correctAnswer0 = questions[0].correctAnswerText
+          let correctAnswer1 = questions[1].correctAnswerText
+					let correctAnswer2 = questions[2].correctAnswerText
+
           let answerDiv = document.getElementsByClassName("answers");
           console.log(answerDiv[0])
-          answerDiv[0].append(correctAnswer);
-          answerDiv[1].append(correctAnswer);
-          answerDiv[2].append(correctAnswer);
-          answerDiv[3].append(correctAnswer);
-
-
+     			//answerDiv[0].append(correctAnswer0);
+          answerDiv[1].append(correctAnswer1);
+          answerDiv[2].append(correctAnswer2);
+			
+				
         }
         // if answer is wrong or blank
         else {
@@ -194,16 +198,16 @@ function setup() {
 }
 
 function draw() {
-  //  clear();
+  //clear();
   background(0);
 
 
 
 
-  buttonss("eddy", 50, links[0]);
-  buttonss("jules", 150, links[1]);
-  buttonss("intro", 250, links[2]);
-  buttonss("start over", 350, links[3]);
+  buttonss("eddy", 40, links[0]);
+  buttonss("jules", 140, links[1]);
+  buttonss("intro", 240, links[2]);
+  buttonss("start over", 340, links[3]);
 
 
 
@@ -223,12 +227,14 @@ function draw() {
     button.style("border-color", "#c6c8ff");
     button.style("border-color", "#c6c8ff");
     button.style("background-color", "transparent");
-    button.position(xpos, 1100);
+    button.position(xpos, 900);
     button.style("font-weight", "regular");
     button.style("font-size", "40px");
     button.style("font-color", col2);
     button.style("font-family", "pixelade");
     button.style("color", "white");
+  	button.style("border-radius", "7px");
+
     button.mousePressed(fun);
 
   }
