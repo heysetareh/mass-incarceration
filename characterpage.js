@@ -15,13 +15,13 @@ function eddyButton() {
 }
 
 function julesButton() {
-  	window.location.assign("https://heysetareh.github.io/mass-incarceration/jules.html");
+  	window.location.assign("https://heysetareh.github.io/mass-incarceration/intropage.html");
 }
 
 function preload() {
   eddy = loadImage("eddy.png");
   jules = loadImage("jules.png");
-  //joe = loadImage("joe.png");
+  graphs = loadImage("data.png");
   
   font = loadFont("pixelade.ttf");
 
@@ -32,8 +32,8 @@ function setup() {
   button = createButton("Eddy");
   button.position(139,535);
   button.mousePressed(eddyButton);
-  button2 = createButton("Jules");
-  button2.position(510,535);
+  button2 = createButton("Data");
+  button2.position(700,535);
   button2.mousePressed(julesButton);
  // button.mousePressed(goToLink);
 } 
@@ -46,9 +46,7 @@ function draw() {
   text("CHOOSE A JOURNEY", windowWidth/2, 50);
   
   image(eddy, 30,200,300,300);
-  text("EDDY",140,500,300,300);
-  image(jules,400,240,300,200);
-  text("JULES",500,500,300,200);
+  image(graphs,600,240,320,300);
   
   
 
