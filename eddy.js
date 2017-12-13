@@ -101,14 +101,12 @@ function setup() {
           );
         }
 
-        // add question and answers to the output
         output.push(
           '<div class="question">' + questions[i].question + '</div>' +
           '<div class="answers">' + answers.join('') + '</div>' + '<div class ="space"></div>'
         );
       }
 
-      //  combine output list into one string of html and put it on the page
       quizContainer.innerHTML = output.join('');
     }
 
@@ -122,10 +120,8 @@ function setup() {
 
       for (var i = 0; i < questions.length; i++) {
 
-        // find selected answer
         userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
 
-        // if answer is correct ad number correct
         if (userAnswer === questions[i].correctAnswer) {
           numCorrect++;
 
