@@ -85,13 +85,13 @@ function setup() {
       // for each question
       for (var i = 0; i < questions.length; i++) {
 
-        //  reset the list of answers
+        //  reset list of answers
         answers = [];
 
-        // for each available answer...
+        // for each available answer
         for (letter in questions[i].answers) {
 
-          // ...add an html radio button
+          // add html radio 
           answers.push(
             '<label>' +
             '<input type="radio" name="question' + i + '" value="' + letter + '">' +
@@ -101,43 +101,40 @@ function setup() {
           );
         }
 
-        // add this question and its answers to the output
+        // add question and answers to the output
         output.push(
           '<div class="question">' + questions[i].question + '</div>' +
           '<div class="answers">' + answers.join('') + '</div>' + '<div class ="space"></div>'
         );
       }
 
-      // finally combine our output list into one string of html and put it on the page
+      //  combine output list into one string of html and put it on the page
       quizContainer.innerHTML = output.join('');
     }
 
 
     function showResults(questions, quizContainer, resultsContainer) {
-      // gather answer containers from our quiz
       var answerContainers = quizContainer.querySelectorAll('.answers');
 
-      // keep track of user's answers
+      // keep track of users answers
       var userAnswer = '';
       var numCorrect = 0;
 
-      // for each question...
       for (var i = 0; i < questions.length; i++) {
 
         // find selected answer
         userAnswer = (answerContainers[i].querySelector('input[name=question' + i + ']:checked') || {}).value;
 
-        // if answer is correct
+        // if answer is correct ad number correct
         if (userAnswer === questions[i].correctAnswer) {
-          // add to the number of correct answers
           numCorrect++;
 
 
 
-          // color the answers green
+          // color answers green
           answerContainers[i].style.color = 'lightgreen';
           
-          //push the correct answer.  
+          //push the correct answer  
           let correctAnswer0 = questions[0].correctAnswerText
           let correctAnswer1 = questions[1].correctAnswerText
 					let correctAnswer2 = questions[2].correctAnswerText
@@ -150,9 +147,8 @@ function setup() {
 			
 				
         }
-        // if answer is wrong or blank
+        // if answer is wrong or blank color red
         else {
-          // color the answers red
           answerContainers[i].style.color = 'red';
         }
       }
@@ -161,11 +157,10 @@ function setup() {
       resultsContainer.innerHTML = numCorrect + ' out of ' + questions.length;
     }
 
-    // show questions right away
 
     showQuestions(questions, quizContainer);
 
-    // on submit, show results
+    // show results
     submitButton.onclick = function() {
       showResults(questions, quizContainer, resultsContainer);
     }
